@@ -1,18 +1,28 @@
+/* 
+Importing Google Font
+This method is one line, opposed to HTML link method being multiple lines 
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+/* Just playing around with CSS variables, wasn't actually necessary */
 :root {
     --main-bg-color: #f8f8f8;
 }
 
+/* Remove default padding and margin from all elements */
 * > * {
     padding: 0;
     margin: 0;
 }
 
+/* Add font for all elements to use */
 html {
     font-family: "Roboto", serif, sans-serif;
 }
 
+/* Use flex to easily align nav items */
 nav {
     display: flex;
     justify-content: end;
@@ -20,11 +30,13 @@ nav {
     background-color: darkgreen;
 }
 
+/* remove decoration and add default text color for all links */
 a {
     text-decoration: none;
     color: #000000;
 }
 
+/* links inside the nav element receive custom styling */
 nav a {
     color: white;
     font-weight: 700;
@@ -32,10 +44,12 @@ nav a {
     border-bottom: 1px solid transparent;
 }
 
+/* add margin to last link to push away from edge of screen */
 nav a:last-child {
     margin-right: 25px;
 }
 
+/* Hover effect added to all links */
 a:hover {
     cursor: pointer;
     border-bottom: 1px solid whitesmoke;
@@ -51,6 +65,7 @@ img {
     border-radius: 50px;
 }
 
+/* Images in header using flex to center and provide space around */
 .header-images {
     display: flex;
     justify-content: space-around;
@@ -61,6 +76,7 @@ h1 {
     font-size: 48px;
 }
 
+/* main section has off-white background */
 main {
     background-color: var(--main-bg-color);
 }
@@ -80,6 +96,7 @@ section p {
     font-size: 18px;
 }
 
+/* every other section inside main has white background */
 main section:nth-child(even) {
     background-color: white;
 }
@@ -114,6 +131,8 @@ tbody tr:nth-child(odd) {
     background-color: white;   
 }
 
+/* white-space: pre-line allows me to put each state in table section on a new line without <br> */
+/* used class selector for each state <td> inside <tr>  */
 .td-states {
     white-space: pre-line;
     padding-bottom: 20px;
@@ -145,6 +164,7 @@ input {
     padding: 5px 0;
 }
 
+/* used ID selector to target specific input type submit */
 #submit {
     padding: 10px;
     border-radius: 5px;
@@ -172,6 +192,7 @@ footer a {
     margin-right: 20px;
 }
 
+/* ID selector to grab paragraph inside food and drink list section */
 #food-note {
     font-size: 20px;
     padding-bottom: 20px;
