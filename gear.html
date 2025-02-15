@@ -25,6 +25,11 @@
     
     <header>
       <h1>Recommended Gear</h1>
+      <div class="header-images">
+        <img src="images/ea_icons_backpack.webp" alt="Picture of backpack" height="200">
+        <img src="images/ea_icons_vest.avif" alt="Picture of vest" height="200">
+        <img src="images/ea_icons_water_bottle.webp" alt="Picture of water bottle" height="200">
+      </div>
     </header>
     <main>
       <section>
@@ -56,6 +61,9 @@
           <li>Patch kit or duct tape for repairs</li>
           <li>Fire starter</li>
         </ul>
+      </section>
+
+      <section>
         <h2>
           <img src="images/ea_icons_vest.avif" alt="" height="25" />
           Clothing and Footwear
@@ -83,6 +91,9 @@
           <li>Blaze-orange hat or vest (in hunting season)</li>
           <li>Wicking, quick-drying sports bra</li>
         </ul>
+      </section>
+
+      <section>
         <h2>
           <img src="images/ea_icons_pens.webp" alt="" height="25" />
           Personal Items
@@ -123,11 +134,14 @@
           </li>
           <li>Trip itinerary left with friend</li>
         </ul>
+      </section>
+
+      <section>
         <h2>
           <img src="images/ea_icons_water_bottle.webp" alt="" height="25" />
           Food and Water
         </h2>
-        <p>6,000 calories per day in these categories:</p>
+        <p id="food-note">6,000 calories per day in these categories:</p>
         <ul>
           <li>Breakfast (oatmeal, granola, freeze-dried breakfast, etc.)</li>
           <li>Lunch (bagels, summer sausage, cheese, smoked salmon, etc.)</li>
@@ -149,7 +163,7 @@
           <input type="text" id="fname" name="fname" />
           <label for="email">Email:</label>
           <input type="text" id="email" name="email" />
-          <input type="submit" />
+          <input type="submit" id="submit"/>
         </form>
 
         <a id="link-to-top" href="#top">Back to top</a>

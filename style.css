@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --main-bg-color: #f8f8f8;
 }
@@ -7,20 +9,26 @@
     margin: 0;
 }
 
+html {
+    font-family: "Roboto", serif, sans-serif;
+}
+
 nav {
     display: flex;
     justify-content: end;
     padding: 25px;
-    background-color: var(--main-bg-color);
+    background-color: darkgreen;
 }
 
 a {
     text-decoration: none;
+    color: #000000;
 }
 
 nav a {
+    color: white;
+    font-weight: 700;
     margin-left: 25px;
-    color: #000000;
     border-bottom: 1px solid transparent;
 }
 
@@ -28,10 +36,10 @@ nav a:last-child {
     margin-right: 25px;
 }
 
-nav a:hover {
+a:hover {
     cursor: pointer;
-    border-bottom: 1px solid #272727;
-    color: #272727;
+    border-bottom: 1px solid whitesmoke;
+    color: whitesmoke;
 }
 
 header {
@@ -50,8 +58,123 @@ img {
 
 h1 {
     padding: 50px 0;
+    font-size: 48px;
 }
 
 main {
     background-color: var(--main-bg-color);
+}
+
+section {
+    padding: 150px 200px;
+}
+
+section > h2 {
+    text-align: center;
+    padding-bottom: 75px;
+    font-size: 32px;
+}
+
+main section:nth-child(even) {
+    background-color: white;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid black;
+    text-align: center;
+}
+
+thead th {
+    padding: 20px 0;
+    background-color: darkgreen;
+    color: white;
+    border-bottom: 3px solid black;
+    font-size: 28px;
+}
+
+tbody td, 
+tbody th {
+    height: 250px;
+    border-bottom: 1px solid black;
+}
+
+tbody th {
+    font-size: 24px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: white;   
+}
+
+.td-states {
+    white-space: pre-line;
+    padding-bottom: 20px;
+}
+
+#newsletter {
+    padding: 25px 200px;
+    text-align: center;
+}
+
+#newsletter h2 {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+label {
+    margin-right: 5px;
+}
+
+input {
+    margin-right: 25px;
+    padding: 5px 0;
+}
+
+#submit {
+    padding: 10px;
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: green;
+    color:white;
+    font-weight: bold;
+    font-size: large;
+}
+
+footer {
+    background-color: darkgreen;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-weight: 600;
+    color: white;
+    padding-bottom: 10px;
+}
+
+footer a {
+    color: white;
+    margin-right: 20px;
+}
+
+#food-note {
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+
+ul li {
+    font-size: 18px;
+    padding-left: 1rem;
+    padding-bottom: 5px;
 }

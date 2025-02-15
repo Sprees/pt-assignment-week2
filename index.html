@@ -86,62 +86,84 @@
       <section>
         <h2>Triple Crown Trail Information</h2>
         <!-- Although the <table> border and cellpadding attributes are depricated, I've decided to use it here for better clarity without the use of CSS -->
-        <table border="1" cellpadding="4">
-          <!-- Define Table column Headers -->
-          <thead>
-            <!-- All headers are inside a single row -->
-            <tr>
-              <th scope="col">Name</th>
-              <th scope="col">Route Image</th>
-              <th scope="col">States on Route</th>
-              <th scope="col">Length</th>
-            </tr>
-          </thead>
-          <!-- Define the body of the table, each row having data for each corresponding header -->
-          <tbody>
-            <tr>
-              <!-- I've used a table header for bold text, as the name of the trail is important and all data in this row relates to it -->
-              <th scope="row">Pacific Crest Trail</th>
-              <td>
-                <img
-                  src="images/Map_of_Pacific_Crest_Trail.png"
-                  alt="Map of the Pacific Crest Trail"
-                  width="200"
-                />
-              </td>
-              <td>California Oregon Washington</td>
-              <td>2,650 mi 4,260 km</td>
-            </tr>
-            <tr>
-              <th scope="row">Continental Divide Trail</th>
-              <td>
-                <img
-                  src="images/Map_of_Continental_Divide_Trail.png"
-                  alt="Map of the Continental Divide Trail"
-                  width="200"
-                />
-              </td>
-              <td>New Mexico Colorado Wyoming Idaho Montana</td>
-              <td>3,200 mi 5,150 km</td>
-            </tr>
-            <tr>
-              <th scope="row">Appalachian Trail</th>
-              <td>
-                <img
-                  src="images/Map_of_Appalachian_Trail.png"
-                  alt="Map of the Appalachian Trail"
-                  width="200"
-                />
-              </td>
-              <td>
-                Georgia North Carolina Tennessee Virginia West Virginia Maryland
-                Pennsylvania New Jersey New York Connecticut Massachusetts
-                Vermont New Hampshire Maine
-              </td>
-              <td>2,189 mi 3,520 km</td>
-            </tr>
-          </tbody>
-        </table>
+        <div id="table-container">
+          <table>
+            <!-- Define Table column Headers -->
+            <thead>
+              <!-- All headers are inside a single row -->
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Route Image</th>
+                <th scope="col">States on Route</th>
+                <th scope="col">Length</th>
+              </tr>
+            </thead>
+            <!-- Define the body of the table, each row having data for each corresponding header -->
+            <tbody>
+              <tr>
+                <!-- I've used a table header for bold text, as the name of the trail is important and all data in this row relates to it -->
+                <th scope="row">Pacific Crest Trail</th>
+                <td>
+                  <img
+                    src="images/Map_of_Pacific_Crest_Trail.png"
+                    alt="Map of the Pacific Crest Trail"
+                    width="200"
+                  />
+                </td>
+                <td class="td-states">
+                  California 
+                  Oregon 
+                  Washington
+                </td>
+                <td>2,650 mi 4,260 km</td>
+              </tr>
+              <tr>
+                <th scope="row">Continental Divide Trail</th>
+                <td>
+                  <img
+                    src="images/Map_of_Continental_Divide_Trail.png"
+                    alt="Map of the Continental Divide Trail"
+                    width="200"
+                  />
+                </td>
+                <td class="td-states">
+                  New Mexico 
+                  Colorado Wyoming 
+                  Idaho 
+                  Montana
+                </td>
+                <td>3,200 mi 5,150 km</td>
+              </tr>
+              <tr>
+                <th scope="row">Appalachian Trail</th>
+                <td>
+                  <img
+                    src="images/Map_of_Appalachian_Trail.png"
+                    alt="Map of the Appalachian Trail"
+                    width="200"
+                  />
+                </td>
+                <td class="td-states">
+                  Georgia 
+                  North Carolina 
+                  Tennessee 
+                  Virginia 
+                  West Virginia 
+                  Maryland
+                  Pennsylvania
+                  New Jersey 
+                  New York 
+                  Connecticut 
+                  Massachusetts
+                  Vermont 
+                  New Hampshire 
+                  Maine
+                </td>
+                <td>2,189 mi 3,520 km</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <!-- Horizontal Break to split up the Main content from Newsletter form -->
@@ -154,7 +176,7 @@
           <input type="text" id="fname" name="fname" />
           <label for="email">Email:</label>
           <input type="text" id="email" name="email" />
-          <input type="submit" />
+          <input type="submit" id="submit" />
         </form>
 
         <!-- #top refers to nav element at the top of the page -->
