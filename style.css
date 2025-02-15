@@ -75,6 +75,11 @@ section > h2 {
     font-size: 32px;
 }
 
+section p {
+    margin-bottom: 18px;
+    font-size: 18px;
+}
+
 main section:nth-child(even) {
     background-color: white;
 }
